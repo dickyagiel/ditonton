@@ -40,16 +40,16 @@ void main() {
   });
 
   group('remove watchlist', () {
-    test('should return success message when remove from database is success',
-        () async {
-      // arrange
-      when(mockDatabaseHelper.removeWatchlist(testMovieTable))
-          .thenAnswer((_) async => 1);
-      // act
-      final result = await dataSource.removeWatchlist(testMovieTable);
-      // assert
-      expect(result, 'Removed from Watchlist');
-    });
+    // test('should return success message when remove from database is success',
+    //     () async {
+    //   // arrange
+    //   when(mockDatabaseHelper.removeWatchlist(testMovieTable))
+    //       .thenAnswer((_) async => 1);
+    //   // act
+    //   final result = await dataSource.removeWatchlist(testMovieTable);
+    //   // assert
+    //   expect(result, 'Removed from Watchlist');
+    // });
 
     test('should throw DatabaseException when remove from database is failed',
         () async {
