@@ -46,7 +46,6 @@ import 'package:ditonton/features/tvs/presentation/blocs/tv_recommendations/reco
 import 'package:ditonton/features/tvs/presentation/blocs/watchlist_event/watchlist_event_bloc.dart';
 import 'package:ditonton/features/tvs/presentation/blocs/watchlist_status/watchlist_status_bloc.dart';
 import 'package:ditonton/features/tvs/presentation/blocs/watchlist_tv/watchlist_tv_bloc.dart';
-import 'package:http/http.dart' as http;
 import 'package:get_it/get_it.dart';
 
 final locator = GetIt.instance;

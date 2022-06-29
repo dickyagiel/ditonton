@@ -1,8 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
-import 'package:ditonton/common/state_enum.dart';
 import 'package:ditonton/features/movies/domain/entities/genre.dart';
-import 'package:ditonton/features/tvs/domain/entities/tv.dart';
 import 'package:ditonton/features/tvs/domain/entities/tv_detail.dart';
 import 'package:ditonton/features/tvs/presentation/blocs/tv_detail/tv_detail_bloc.dart';
 import 'package:ditonton/features/tvs/presentation/blocs/tv_recommendations/recommendations_tv_bloc.dart';
@@ -11,7 +9,6 @@ import 'package:ditonton/features/tvs/presentation/blocs/watchlist_status/watchl
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:provider/provider.dart';
 
 class TVDetailPage extends StatefulWidget {
   static const ROUTE_NAME = '/detail-tv';

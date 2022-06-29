@@ -11,6 +11,7 @@ import 'package:ditonton/features/movies/presentation/pages/search_page.dart';
 import 'package:ditonton/features/movies/presentation/pages/top_rated_movies_page.dart';
 import 'package:ditonton/features/movies/presentation/pages/watchlist_movies_page.dart';
 import 'package:ditonton/features/tvs/presentation/pages/home_tv_page.dart';
+import 'package:ditonton/features/tvs/presentation/pages/watchlist_tv_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -58,9 +59,16 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
             ),
             ListTile(
               leading: Icon(Icons.save_alt),
-              title: Text('Watchlist'),
+              title: Text('Watchlist Movie'),
               onTap: () {
                 Navigator.pushNamed(context, WatchlistMoviesPage.ROUTE_NAME);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.save_alt),
+              title: Text('Watchlist TV'),
+              onTap: () {
+                Navigator.pushNamed(context, WatchlistTVPage.ROUTE_NAME);
               },
             ),
             ListTile(

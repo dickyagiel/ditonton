@@ -1,9 +1,7 @@
-import 'package:ditonton/common/state_enum.dart';
 import 'package:ditonton/features/tvs/presentation/blocs/top_rated_tv/top_rate_tv_bloc.dart';
 import 'package:ditonton/features/tvs/presentation/widget/tv_card_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
 class TopRatedTVPage extends StatefulWidget {
   static const ROUTE_NAME = '/top-rated-tv';

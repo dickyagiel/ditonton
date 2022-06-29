@@ -30,6 +30,7 @@ import 'package:ditonton/features/tvs/presentation/pages/popular_tv_page.dart';
 import 'package:ditonton/features/tvs/presentation/pages/search_tv_page.dart';
 import 'package:ditonton/features/tvs/presentation/pages/top_rated_tv_page.dart';
 import 'package:ditonton/features/tvs/presentation/pages/tv_detail_page.dart';
+import 'package:ditonton/features/tvs/presentation/pages/watchlist_tv_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -146,6 +147,8 @@ class MyApp extends StatelessWidget {
               return CupertinoPageRoute(builder: (_) => SearchTVPage());
             case WatchlistMoviesPage.ROUTE_NAME:
               return MaterialPageRoute(builder: (_) => WatchlistMoviesPage());
+            case WatchlistTVPage.ROUTE_NAME:
+              return MaterialPageRoute(builder: (_) => WatchlistTVPage());
             case AboutPage.ROUTE_NAME:
               return MaterialPageRoute(builder: (_) => AboutPage());
             default:
