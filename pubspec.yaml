@@ -48,7 +48,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   bloc_test: ^9.0.0
-
+  
+workflows:
+  release-workflow:
+    name: Release
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
